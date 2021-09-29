@@ -942,6 +942,12 @@ main .fot_bg img{
 	main .fot_bg img{
 		display:block;
 	}
+	main .banner img{
+		display:block;
+	}
+	main .banner video{
+		display:none;
+	}
 }
 @media screen and (max-width:480px){
 	main .list li a .tit .tit_r,main .list li a .tit .tit_r span{
