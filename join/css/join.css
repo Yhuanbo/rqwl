@@ -1,0 +1,208 @@
+/* ********banner开始******* */
+main .banner{
+	background:url(../img/banner-joinus.jpg) no-repeat top center;
+	position:relative;
+	height:376px;
+	overflow:hidden;
+}
+main .banner .txt{
+	text-align:center;
+	color:#fff;
+	padding-top:200px;
+}
+main .banner .txt h2{
+	font-weight:bold;
+	font-size:2.5rem;
+	line-height:1.4;
+}
+main .banner .txt p{
+	font-size:1rem;
+}
+/* ********banner结束******* */
+
+main .tab_con .con{
+	display:none;
+}
+main .tab_tit{
+	text-align:center;
+	padding-top:60px;
+	border-bottom:4px solid #2b92dc;
+	padding-bottom:20px;
+	margin-bottom:20px;
+	font-size:0;
+}
+main .tab_tit a{
+	font-size:1.125rem;
+	color:#787878;
+	margin:0 10px;
+}
+main .tab_tit a:hover{
+	color:#007ac3;
+}
+main .tab_tit a.active{
+	color:#2b92dc;
+	border-bottom:1px #2b92dc solid;
+	padding-bottom:4px;
+}
+main .tit_box{
+	margin-top:15px;
+}
+main .tit_box li{
+	width:33.333%;
+	margin-bottom:36px;
+}
+main .tit_box li .inner{
+	margin:0 18px;
+	position:relative;
+	height:48px;
+	padding-left:90px;
+}
+main .tit_box li:first-of-type .inner{
+	margin-left:0;
+}
+main .tit_box li .inner .label{
+	position:absolute;
+	width:90px;
+	line-height:48px;
+	font-size:1rem;
+	color:#434343;
+	left:0;
+}
+main .tit_box li .inner .input_box .input_wrap{ 
+	padding:1px;
+	position:relative;
+	background:linear-gradient(-30deg, transparent 8px, #bfbfbf 0);
+}
+main .tit_box li .inner .input_box .input_wrap .input_con{
+	padding-top:13px;
+	padding-bottom:12px;
+	padding-left:10px;
+	padding-right:10px;
+	background:linear-gradient(-30deg, transparent 8px, #fff 0);
+}
+main .tit_box li .inner .input_box .input_wrap .select{
+	width:100%;
+	font-size:.9375rem;
+	color:#999;
+	height:20px;
+	position:relative;
+}
+main .tit_box li .inner .input_box .input_wrap .select .select_tit{
+	color:#999;
+	display:block;
+	line-height:20px;
+}
+main .tit_box li .inner .input_box .input_wrap .btn{
+	width:60px;
+	position:absolute;
+	right:1px;
+	border-left:1px solid #bfbfbf;
+	top:1px;
+	bottom:1px;
+}
+main .tit_box li .inner .input_box .input_wrap .btn i{
+	display:inline-block;
+	width:24px;
+	height:16px;
+	background:url(../img/arrow-d.png) no-repeat;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	transition:all 0.3s cubic-bezier(0, 0, 0.58, 1);
+}
+main .tit_box li .inner .input_box .input_wrap .btn.active i{
+	transform:translate(-50%,-50%) rotate(-180deg);
+}
+main .tit_box li .inner .input_box .input_wrap .drop{
+	max-height:240px;
+	position:absolute;
+	left:-11px;
+	right:50px;
+	top:32px;
+	z-index:999;
+	background-color:#fff;
+	border:1px #2b92dc solid;
+	overflow-y:auto;
+	display:none;
+}
+main .tit_box li .inner .input_box .input_wrap .drop a{
+	display:block;
+	padding:4px 10px;
+	color:#999;
+}
+main .tit_box li .inner .input_box .input_wrap .drop a.selected{
+	background-color:#f8f8f8;
+	color:#007ac3;
+}
+main .tit_box li .inner .input_box .input_wrap .drop a:hover{
+	color:#007ac3;
+}
+main .tit_box li:last-of-type .inner .input_box .input_wrap .btn i{
+	width:24px;
+	height:24px;
+	background:url(../img/icon-sear-blue.png) no-repeat;
+	background-size:24px 24px;
+}
+main .tab_con .con{
+	margin-bottom:40px;
+	padding-bottom:20px;
+	padding-top:20px;
+	border-bottom:1px #dfdfdf solid;
+	border-top:1px #dfdfdf solid;
+}
+main .tab_con .con table{
+	width:100%;
+}
+main .tab_con .con table tr{
+	cursor:pointer;
+}
+main .tab_con .con table th,main .tab_con .con table td{
+	padding:6px 10px;
+	color:#434343;
+	font-weight:bold;
+	text-align:center;
+}
+main .tab_con .con table td{
+	font-weight:normal;
+}
+main .tab_con .con table th:first-of-type,main .tab_con .con table td:first-of-type{
+	text-align:left;
+	padding-left:20px;
+}
+main .tab_con .con table tr:hover td{
+	background-color:#dee5ea;
+}
+/* ********媒体查询开始******** */
+@media screen and (max-width:768px) {
+	main .banner{
+		height:188px;
+		background-size:1280px 188px;
+	}
+	main .banner .txt{
+		padding-top:96px;
+	}
+	main .banner .txt h2{
+		font-size:1.5rem;
+	}
+	main .banner .txt p{
+		font-size:.875rem;
+	}
+	main .tab_tit{
+		padding-top:20px;
+		border-bottom:3px solid #2b92dc;
+		padding-bottom:15px;
+		margin-bottom:0;
+	}
+	main .tab_tit a{
+		font-size:1rem;
+	}
+	main .tit_box li .inner{
+		margin:0 5px;
+	}
+	main .tit_box li{
+		width:100%;
+		margin-bottom:10px;
+	}
+}
+/* ********媒体查询结束******** */
