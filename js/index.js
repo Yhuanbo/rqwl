@@ -17,9 +17,9 @@ $(function() {
 	//新闻动态
 	var $this = $("#list_ul");
 	var scrollTimer1; //计时器标志
-	$this.hover(function() {
+	$this.mousemove(function() {
 		clearInterval(scrollTimer1);
-	}, function() {
+	}).mouseleave( function() {
 		scrollTimer1 = setInterval(function() {
 			var lineHeight = $this.parent().height(); //获取行高
 			// console.log("translateY(" + -lineHeight + "px)")
@@ -36,9 +36,9 @@ $(function() {
 
 	var $list = $("#list_ul_sm");
 	var scrollTimer; //计时器标志
-	$list.hover(function() {
+	$list.mousemove(function() {
 		clearInterval(scrollTimer);
-	}, function() {
+	}).mouseleave(function() {
 		scrollTimer = setInterval(function() {
 			var lineHeight = $list.parent().height(); //获取行高
 			// console.log("translateY(" + -lineHeight + "px)")
